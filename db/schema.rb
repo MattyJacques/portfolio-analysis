@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_04_08_083858) do
+ActiveRecord::Schema.define(version: 2021_04_16_210053) do
 
   create_table "cryptos", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.string "name", null: false
@@ -19,6 +19,21 @@ ActiveRecord::Schema.define(version: 2021_04_08_083858) do
     t.bigint "amount_withdrawn", default: 0
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "transactions", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+    t.bigint "crypto_id"
+    t.datetime "timestamp"
+    t.integer "type"
+    t.integer "quantity"
+    t.integer "price"
+    t.integer "subtotal"
+    t.integer "fees"
+    t.integer "total"
+    t.text "notes"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["crypto_id"], name: "index_transactions_on_crypto_id"
   end
 
 end
