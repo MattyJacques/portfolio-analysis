@@ -1,0 +1,23 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  timestamp: 2021-04-16 22:00:53
+  type: 1
+  asset: MyString
+  quantity: 1
+  price: 1
+  subtotal: 1
+  fees: 1
+  total: 1
+  notes: MyText
+
+two:
+  timestamp: 2021-04-16 22:00:53
+  type: 1
+  asset: MyString
+  quantity: 1
+  price: 1
+  subtotal: 1
+  fees: 1
+  total: 1
+  notes: MyText
