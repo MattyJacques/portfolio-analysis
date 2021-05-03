@@ -6,3 +6,4 @@ AllCops:
     - 'db/**/*'
     - 'script/**/*'
     - 'bin/**/*'
+    - 'node_modules/**/*'
