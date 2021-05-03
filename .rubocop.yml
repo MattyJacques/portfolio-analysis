@@ -1,5 +1,8 @@
-Style/Encoding:
-  Enabled: false
-
 Layout/LineLength:
   Max: 99
+
+AllCops:
+  Exclude:
+    - 'db/**/*'
+    - 'script/**/*'
+    - 'bin/**/*'
