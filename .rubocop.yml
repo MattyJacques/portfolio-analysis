@@ -7,14 +7,15 @@ AllCops:
     - 'script/**/*'
     - 'bin/**/*'
     - 'node_modules/**/*'
+  NewCops: enable
+
+Lint/AmbiguousBlockAssociation:
+  Exclude:
+    - spec/**/*
 
 Metrics/BlockLength:
   Exclude:
     - config/**/*
-    - spec/**/*
-
-Lint/AmbiguousBlockAssociation:
-  Exclude:
     - spec/**/*
 
 Style/Documentation:
