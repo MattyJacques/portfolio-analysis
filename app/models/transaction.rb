@@ -7,11 +7,11 @@ class Transaction < ApplicationRecord
   t.string :asset
 
   def quantity
-    self[:quantity] / 100000000.0
+    self[:quantity] / 100_000_000.0
   end
 
   def quantity=(value)
-    self[:quantity] = value * 100000000.0
+    self[:quantity] = value * 100_000_000.0
   end
 
   def price
