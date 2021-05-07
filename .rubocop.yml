@@ -27,8 +27,8 @@ Metrics/BlockLength:
 Style/Documentation:
   Enabled: false
 
-Style/StringLiterals:
-  EnforcedStyle: double_quotes
+#Style/StringLiterals:
+#  EnforcedStyle: double_quotes
 
 Style/SymbolArray:
   EnforcedStyle: brackets
