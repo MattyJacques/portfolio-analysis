@@ -48,7 +48,7 @@ group :development do
   # Read more: https://github.com/rails/spring
   gem "spring"
 
-    # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
+  # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
   gem "web-console", ">= 4.1.0"
 end
 
