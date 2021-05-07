@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 class Transaction < ApplicationRecord
 
   enum type: { buy: 0, sell: 1, convert: 2, send: 3, receive: 4, earn: 5, income: 6  }

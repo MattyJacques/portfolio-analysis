@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 class Crypto < ApplicationRecord
 
   def amount_held
