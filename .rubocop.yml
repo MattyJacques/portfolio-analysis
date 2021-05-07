@@ -19,6 +19,9 @@ Layout/ExtraSpacing:
 Layout/LineLength:
   Max: 99
 
+Layout/SpaceInsideArrayLiteralBrackets:
+  EnforcedStyle: space
+
 Metrics/BlockLength:
   Exclude:
     - config/**/*
