@@ -1,6 +1,3 @@
-Layout/LineLength:
-  Max: 99
-
 AllCops:
   Exclude:
     - 'db/**/*'
@@ -13,6 +10,15 @@ Lint/AmbiguousBlockAssociation:
   Exclude:
     - spec/**/*
 
+Layout/EmptyLinesAroundClassBody:
+  EnforcedStyle: empty_lines_except_namespace
+
+Layout/ExtraSpacing:
+  Enabled: false
+
+Layout/LineLength:
+  Max: 99
+
 Metrics/BlockLength:
   Exclude:
     - config/**/*
@@ -20,6 +26,9 @@ Metrics/BlockLength:
 
 Style/Documentation:
   Enabled: false
+
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
 
 Style/SymbolArray:
   EnforcedStyle: brackets
