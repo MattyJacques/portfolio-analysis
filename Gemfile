@@ -36,6 +36,9 @@ group :development, :test do
 end
 
 group :development do
+  # Security vulnerability static analysis
+  gem "brakeman"
+
   gem "listen", "~> 3.3"
 
   # Display performance information such as SQL time and flame graphs for each request
