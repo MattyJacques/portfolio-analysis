@@ -1,3 +1,8 @@
+require:
+  - rubocop-performance
+  - rubocop-rails
+  - rubocop-rspec
+
 AllCops:
   Exclude:
     - 'db/**/*'
@@ -26,6 +31,12 @@ Metrics/BlockLength:
   Exclude:
     - config/**/*
     - spec/**/*
+
+Rails/FilePath:
+  EnforcedStyle: arguments
+
+Rails/SaveBang:
+  Enabled: true
 
 Style/ClassAndModuleChildren:
   EnforcedStyle: compact

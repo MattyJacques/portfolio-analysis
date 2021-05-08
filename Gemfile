@@ -45,7 +45,9 @@ group :development do
   # in your browser. Can be configured to work on production as well.
   # See: https://github.com/MiniProfiler/rack-mini-profiler/blob/master/README.md
   gem "rack-mini-profiler", "~> 2.0"
-  gem "rubocop"
+  gem "rubocop-performance"
+  gem "rubocop-rails"
+  gem "rubocop-rspec"
 
   # Spring speeds up development by keeping your application running in the background.
   # Read more: https://github.com/rails/spring
