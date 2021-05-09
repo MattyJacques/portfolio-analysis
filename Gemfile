@@ -33,11 +33,14 @@ gem "bootsnap", ">= 1.4.4", require: false
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem "byebug", platforms: [ :mri, :mingw, :x64_mingw ]
+
+  # Ruby style guide, linter, and formatter
+  gem "standard" , require: false
 end
 
 group :development do
   # Security vulnerability static analysis
-  gem "brakeman"
+  gem "brakeman" , require: false
 
   gem "listen", "~> 3.3"
 
@@ -45,9 +48,11 @@ group :development do
   # in your browser. Can be configured to work on production as well.
   # See: https://github.com/MiniProfiler/rack-mini-profiler/blob/master/README.md
   gem "rack-mini-profiler", "~> 2.0"
-  gem "rubocop-performance"
-  gem "rubocop-rails"
-  gem "rubocop-rspec"
+
+  gem 'rubocop', '~> 1.14', require: false
+  gem "rubocop-performance", "~> 1.11.3", require: false
+  gem "rubocop-rails", "~> 2.10.1", require: false
+  gem "rubocop-rspec", "~> 2.3.0", require: false
 
   # Spring speeds up development by keeping your application running in the background.
   # Read more: https://github.com/rails/spring
