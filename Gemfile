@@ -35,12 +35,12 @@ group :development, :test do
   gem "byebug", platforms: [ :mri, :mingw, :x64_mingw ]
 
   # Ruby style guide, linter, and formatter
-  gem "standard" , require: false
+  gem "standard", require: false
 end
 
 group :development do
   # Security vulnerability static analysis
-  gem "brakeman" , require: false
+  gem "brakeman", require: false
 
   gem "listen", "~> 3.3"
 
@@ -49,7 +49,7 @@ group :development do
   # See: https://github.com/MiniProfiler/rack-mini-profiler/blob/master/README.md
   gem "rack-mini-profiler", "~> 2.0"
 
-  gem 'rubocop', '~> 1.14', require: false
+  gem "rubocop", "~> 1.14", require: false
   gem "rubocop-performance", "~> 1.11.3", require: false
   gem "rubocop-rails", "~> 2.10.1", require: false
   gem "rubocop-rspec", "~> 2.3.0", require: false
