@@ -35,7 +35,7 @@ group :development, :test do
   gem "byebug", platforms: [ :mri, :mingw, :x64_mingw ]
 
   # Ruby style guide, linter, and formatter
-  gem "standard", require: false
+  gem "standard", "~> 1.1.1", require: false
 end
 
 group :development do
@@ -50,7 +50,7 @@ group :development do
   gem "rack-mini-profiler", "~> 2.0"
 
   gem "rubocop", "~> 1.14", require: false
-  gem "rubocop-performance", "~> 1.11.3", require: false
+  gem "rubocop-performance", "~> 1.11.2", require: false
   gem "rubocop-rails", "~> 2.10.1", require: false
   gem "rubocop-rspec", "~> 2.3.0", require: false
 
