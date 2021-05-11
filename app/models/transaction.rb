@@ -1,8 +1,7 @@
 # frozen_string_literal: true
 
 class Transaction < ApplicationRecord
-
-  enum type: { buy: 0, sell: 1, convert: 2, send: 3, receive: 4, earn: 5, income: 6 }
+  enum type: {buy: 0, sell: 1, convert: 2, send: 3, receive: 4, earn: 5, income: 6}
 
   t.string :asset
 
@@ -45,5 +44,4 @@ class Transaction < ApplicationRecord
   def total=(value)
     self[:total] = value * 100
   end
-
 end
