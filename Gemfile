@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
@@ -44,6 +45,10 @@ group :development do
   gem "spring"
   # Static analysis linter
   gem "standard", "~> 1.1.1", require: false
+  gem "rubocop", "~> 1.14", require: false
+  gem "rubocop-performance", "~> 1.11.2", require: false
+  gem "rubocop-rails", "~> 2.10.1", require: false
+  gem "rubocop-rspec", "~> 2.3.0", require: false
 end
 
 group :test do
