@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Crypto < ApplicationRecord
   def amount_held
     self[:amount_held] / 100000000.0
