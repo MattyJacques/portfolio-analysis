@@ -36,8 +36,7 @@ group :development, :test do
 end
 
 group :development do
-  # Static analysis for security vulnerabilities
-  #gem "brakeman", require: false
+  
 
   gem "listen", "~> 3.3"
 
