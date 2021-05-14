@@ -1,10 +1,12 @@
+# frozen_string_literal: true
+
 class Crypto < ApplicationRecord
   def amount_held
-    self[:amount_held] / 100000000.0
+    self[:amount_held] / 100_000_000.0
   end
 
   def amount_held=(value)
-    self[:amount_held] = value * 100000000.0
+    self[:amount_held] = value * 100_000_000.0
   end
 
   def amount_deposited
