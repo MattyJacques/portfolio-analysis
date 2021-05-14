@@ -39,6 +39,8 @@ group :development do
   # Static analysis for security vulnerabilities
   gem "brakeman"
 
+  gem "bundler-audit", require: false
+
   gem "listen", "~> 3.3"
 
   # Display performance information such as SQL time and flame graphs for each request
