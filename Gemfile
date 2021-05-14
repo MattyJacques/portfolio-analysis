@@ -37,7 +37,7 @@ end
 
 group :development do
   # Static analysis for security vulnerabilities
-  gem "brakeman"
+  gem "brakeman", require: false
 
   gem "bundler-audit", require: false
 
