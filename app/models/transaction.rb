@@ -3,7 +3,7 @@
 class Transaction < ApplicationRecord
   enum type: {buy: 0, sell: 1, convert: 2, send: 3, receive: 4, earn: 5, income: 6}
 
-  attr_accessor :asset
+  attr_accessible :asset
 
   def quantity
     self[:quantity] / 100_000_000.0
