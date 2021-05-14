@@ -39,6 +39,7 @@ group :development do
   # Static analysis for security vulnerabilities
   gem "brakeman", require: false
 
+  # Patch-level verification
   gem "bundler-audit", require: false
 
   gem "listen", "~> 3.3"
@@ -47,6 +48,9 @@ group :development do
   # in your browser. Can be configured to work on production as well.
   # See: https://github.com/MiniProfiler/rack-mini-profiler/blob/master/README.md
   gem "rack-mini-profiler", "~> 2.0"
+
+  # Detect code smells
+  gem "reek", require: false
 
   # Static analysis linters
   gem "rubocop", "~> 1.14", require: false
